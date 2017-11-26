@@ -13,14 +13,14 @@ import string
 class Alerter:
     def __init__(self):
     	# Config for api requests/posts
-	self.getListApi = 'http://example.com/get.php'
-	self.postchangesApi = 'http://example.com/post.php'
+		self.getListApi = 'http://localhost:8000/get.php'
+		self.postchangesApi = 'http://localhost:8000/post.php'
 
-	# Config for SMTP
-	self.sender = 'example@gmail.com'
-        self.server = smtplib.SMTP('smtp.gmail.com', 587)
-        self.username = 'example@gmail.com'
-	self.password = 'yourpassword'
+		# Config for SMTP
+		self.sender = 'example@gmail.com'
+		self.server = smtplib.SMTP('smtp.gmail.com', 587)
+		self.username = 'example@gmail.com'
+		self.password = 'yourpassword'
 
     def getList(self):
         return json.loads(urllib.request.urlopen(self.getListApi).read().decode())
