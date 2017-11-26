@@ -13,8 +13,8 @@ import string
 class Alerter:
     def __init__(self):
     	# Config for api requests/posts
-		self.getListApi = 'http://localhost:8000/get.php'
-		self.postchangesApi = 'http://localhost:8000/post.php'
+		self.getListApi = 'http://localhost:8000/php/get.php'
+		self.postchangesApi = 'http://localhost:8000/php/post.php'
 
 		# Config for SMTP
 		self.sender = 'example@gmail.com'
