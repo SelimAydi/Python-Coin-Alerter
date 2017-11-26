@@ -23,6 +23,8 @@ try {
     <link rel="stylesheet" type="text/css" href="/style/stylesheet.css">
 </head>
 <body>
+<div class="topbar">
+</div>
 <div class="configwrap">
     <div class="title">
         <h1>Coin Alerter</h1>
